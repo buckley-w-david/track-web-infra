@@ -1,0 +1,6 @@
+bases:
+  - ../../base
+resources:
+  - gke-ingress.yaml
+patches:
+  - gke-traefik.yaml

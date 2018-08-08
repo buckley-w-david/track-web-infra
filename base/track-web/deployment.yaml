@@ -1,0 +1,26 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: track-web
+  labels:
+    run: track-web
+spec:
+  template:
+    metadata:
+      labels:
+         tier: frontend
+    spec:
+      containers:
+      - name: track-digital
+        image: buckleywdavid/track-web:0.6.0
+        ports:
+        - containerPort: 5000
+        envFrom:
+        - configMapRef:
+           name: track-web-config
+        env:
+        - name: TRACKER_MONGO_URI
+          valueFrom:
+            secretKeyRef:
+              name: track-web-secrets
+              key: connection-string.txt

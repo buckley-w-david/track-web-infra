@@ -1,0 +1,7 @@
+kind: Service
+apiVersion: v1
+metadata:
+    name: traefik-ingress-service
+spec:
+    type: LoadBalancer
+    loadBalancerIP: "35.197.121.223"

@@ -1,0 +1,9 @@
+# Configuration of track-digital non-sensitive information
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: track-web-config
+data:
+  TRACKER_ENV: "production"
+  TRACKER_CACHE_DIR: "/tmp/track-web-cache"
+

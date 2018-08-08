@@ -1,0 +1,5 @@
+commonLabels:
+  role: sealed-secrets
+resources:
+  - controller.yaml
+  - sealedsecret-crd.yaml

@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: tracker-job
+  labels:
+    run: tracker-run
+spec:
+  template:
+    spec:
+      containers:
+      - name: tracker-run
+        image: buckleywdavid/tracker-run:0.0.7
+        envFrom:
+        - configMapRef:
+           name: track-digital-config
+      restartPolicy: OnFailure

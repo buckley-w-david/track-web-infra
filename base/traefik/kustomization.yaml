@@ -1,0 +1,6 @@
+commonLabels:
+  role: traefik
+resources:
+  - traefik-rbac.yaml
+  - traefik-ds.yaml
+

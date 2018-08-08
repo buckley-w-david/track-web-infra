@@ -1,0 +1,20 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: tracker-run
+spec:
+  schedule: "0 0 * * 1,3,5"
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            tier: backend
+        spec:
+          containers:
+          - name: tracker-run
+            image: buckleywdavid/tracker-run:0.0.7
+            envFrom:
+            - configMapRef:
+               name: track-web-config
+          restartPolicy: OnFailure

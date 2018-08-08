@@ -1,0 +1,5 @@
+bases:
+  - ../../base
+resources:
+  - minikube_hostpath.yaml
+  - minikube-ingress.yaml

@@ -1,0 +1,7 @@
+commonLabels:
+  role: track-digital
+resources:
+  - config.yaml
+  - deployment.yaml
+  - service.yaml
+  - track-web-secrets.json
