@@ -1,4 +1,4 @@
-# Configuration of track-digital non-sensitive information
+# Configuration of track-web non-sensitive information
 kind: ConfigMap
 apiVersion: v1
 metadata:

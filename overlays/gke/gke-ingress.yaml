@@ -1,14 +1,14 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: track-digital-web
+  name: track-web-ingress
   annotations:
     kubernetes.io/ingress.class: traefik
 spec:
   rules:
-  - host: track-digital.davidbuckley.ca
+  - host: track-web.davidbuckley.ca
     http:
       paths:
       - backend:
-          serviceName: track-digital-service
+          serviceName: track-web-service
           servicePort: http

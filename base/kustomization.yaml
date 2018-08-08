@@ -1,5 +1,5 @@
 commonLabels:
-  app: track-digital
+  app: track-web
 bases:
   - traefik/
   - sealed-secrets/

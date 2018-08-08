@@ -1,5 +1,7 @@
 bases:
   - ../../base
 resources:
-  - minikube_hostpath.yaml
+  - minikube-storage.yaml
   - minikube-ingress.yaml
+patches:
+  - traefik-service.yaml

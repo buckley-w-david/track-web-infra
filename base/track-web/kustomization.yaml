@@ -1,5 +1,5 @@
 commonLabels:
-  role: track-digital
+  role: track-web
 resources:
   - config.yaml
   - deployment.yaml

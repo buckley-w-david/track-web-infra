@@ -4,7 +4,6 @@ kind: Service
 metadata:
   name: track-web-service
 spec:
-  type: NodePort
   ports:
   - name: http
     targetPort: 5000
