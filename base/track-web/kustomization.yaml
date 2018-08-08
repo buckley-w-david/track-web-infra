@@ -1,7 +1,8 @@
 commonLabels:
   role: track-web
 resources:
-  - config.yaml
-  - deployment.yaml
-  - service.yaml
   - track-web-secrets.json
+  - track-web-config.yaml
+  - track-web.yaml
+  - tracker-config.yaml
+  - tracker-cronjob.yaml

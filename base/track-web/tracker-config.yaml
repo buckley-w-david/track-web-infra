@@ -1,0 +1,7 @@
+# Configuration of track-web non-sensitive information
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: tracker-config
+data:
+  TRACKER_ENV: "production"
